@@ -1,0 +1,55 @@
+.logo {
+  margin-left: 50px;
+}
+
+.basket-icon {
+  position: relative;
+}
+.basket-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -8px;
+  right: 0px;
+}
+#mynavbar {
+  margin-left: 40px;
+}
+
+.burger-menu{
+  margin-right: 70px;
+}
+
+
+
+.navbar a{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  #mynavbar ul li {
+   border-radius: 50px;
+    margin-left: 15px;
+    border: 2px solid white;
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  #mynavbar ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .burger-menu{
+    
+  }
+  .search-icon{
+    margin-top: 16px;
+  }
+}

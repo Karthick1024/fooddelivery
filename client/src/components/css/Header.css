@@ -1,0 +1,104 @@
+/* General Header Styling */
+.header {
+    height: 42vw;
+    margin: 70px auto;
+    background-image: url('/header_img.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Aligns the content to the bottom */
+    padding: 0 6vw;
+    box-sizing: border-box;
+}
+
+/* Header Contents */
+.header-contents {
+    gap: 1.5vw;
+    max-width: 50%;
+    margin-bottom: 40px;
+    animation: fadeIn 3s;
+}
+
+/* Heading Styling */
+.header-contents h2 {
+    font-weight: 500;
+    font-size: max(4.5vw, 22px);
+    line-height: 1.2;
+    color: white;
+}
+
+/* Paragraph Styling */
+.header-contents p {
+    font-size: 1.2vw;
+    line-height: 1.6;
+    color: white;
+    margin: 0;
+}
+
+/* Button Styling */
+.header-contents button {
+    padding: 10px 20px;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: black;
+    background-color: white; /* Tomato color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-contents button:hover {
+    background-color: #e5533c; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        height: 60vw; /* Adjust header height for smaller screens */
+        padding: 0 4vw;
+    }
+
+    .header-contents {
+        max-width: 80%;
+        margin-bottom: 20px;
+        gap: 1vw;
+    }
+
+    .header-contents h2 {
+        font-size: max(6vw, 18px); /* Larger font size for small screens */
+    }
+
+    .header-contents p {
+        font-size: 3.5vw; /* Increase paragraph size */
+    }
+
+    .header-contents button {
+        font-size: 3.5vw; /* Adjust button size */
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 70vw;
+    }
+
+    .header-contents {
+        max-width: 90%;
+    }
+
+    .header-contents h2 {
+        font-size: 20px; /* Ensure a readable font size */
+    }
+
+    .header-contents p {
+        font-size: 14px;
+    }
+
+    .header-contents button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
