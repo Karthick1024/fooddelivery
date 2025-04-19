@@ -15,6 +15,7 @@ const Login = ({ setShowlogin }) => {
                 </div>
                 <div className="login-input">
                     {currentstate === "Login" ? <></> : <input type="text" placeholder='Your Name' required />}
+                    
 
                     <input type="email" placeholder='Your Email' required />
                     <input type="password" placeholder='********' required />
